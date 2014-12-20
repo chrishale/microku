@@ -1,0 +1,9 @@
+extends layout
+
+block content
+	div
+		form(action='/services',method='post')
+			label(for='code') Code
+				textarea(id='code',rows='40',cols='80',name='code')
+					| exports.main = function() {}
+			input(type='submit',value='Go')
